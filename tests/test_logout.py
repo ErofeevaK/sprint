@@ -19,3 +19,4 @@ def test_logout(driver):
     wait = WebDriverWait(driver, 5)
     driver.find_element(*NavigationLocators.PROFILE_BUTTON).click()
     wait.until(EC.element_to_be_clickable(ProfileLocators.LOGOUT_BUTTON)).click()
+
